@@ -1,0 +1,307 @@
+<?xml version="1.0" ?>
+<robot name="(Unsaved)" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find (Unsaved)_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find (Unsaved)_description)/urdf/(Unsaved).trans" />
+<xacro:include filename="$(find (Unsaved)_description)/urdf/(Unsaved).gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.025765200764109784 0.0075000000000000015 0.25345820295421156" rpy="0 0 0"/>
+    <mass value="0.9992677445909901"/>
+    <inertia ixx="0.00404" iyy="0.00757" izz="0.003532" ixy="0.0" iyz="-0.0" ixz="6.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component2_1">
+  <inertial>
+    <origin xyz="-0.09949580779902034 0.0014999999999999996 -0.06382421498704685" rpy="0 0 0"/>
+    <mass value="0.11572033116761245"/>
+    <inertia ixx="0.000184" iyy="0.000628" izz="0.000444" ixy="-0.0" iyz="-0.0" ixz="-0.00028"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.026193 -0.003 -0.23495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.026193 -0.003 -0.23495" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component1_1">
+  <inertial>
+    <origin xyz="0.02252968223889202 -0.0015 -0.019569060203450367" rpy="0 0 0"/>
+    <mass value="0.021082503293697062"/>
+    <inertia ixx="4e-06" iyy="8e-06" izz="5e-06" ixy="-0.0" iyz="0.0" ixz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.053973 -0.003 -0.200422" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.053973 -0.003 -0.200422" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component3_1">
+  <inertial>
+    <origin xyz="0.08564989613156687 -0.0015 -0.05718108213701347" rpy="0 0 0"/>
+    <mass value="0.05851255306906704"/>
+    <inertia ixx="6.5e-05" iyy="0.000211" izz="0.000146" ixy="-0.0" iyz="-0.0" ixz="9.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.165099 -0.003 -0.110331" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.165099 -0.003 -0.110331" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin xyz="0.04427794787389236 -0.0014999999999999998 -0.049498570843543845" rpy="0 0 0"/>
+    <mass value="0.08170956705532126"/>
+    <inertia ixx="0.000154" iyy="0.000433" izz="0.00028" ixy="0.0" iyz="-0.0" ixz="0.000205"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.183357 -0.003 -0.110331" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.183357 -0.003 -0.110331" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_1">
+  <inertial>
+    <origin xyz="0.0335397109616608 0.0015000000000000005 -0.01864423968820411" rpy="0 0 0"/>
+    <mass value="0.18080654310050806"/>
+    <inertia ixx="3.9e-05" iyy="0.000446" izz="0.000408" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.043656 -0.003 0.009525" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.043656 -0.003 0.009525" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component5_1">
+  <inertial>
+    <origin xyz="-0.0101162890383392 0.0015000000000000005 -0.028169239688204114" rpy="0 0 0"/>
+    <mass value="0.18080654310050806"/>
+    <inertia ixx="3.9e-05" iyy="0.000446" izz="0.000408" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.003 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.003 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component6_1">
+  <inertial>
+    <origin xyz="0.016895587557721695 -0.0045 -0.006013941981310167" rpy="0 0 0"/>
+    <mass value="0.014807951663384037"/>
+    <inertia ixx="1e-06" iyy="3e-06" izz="2e-06" ixy="0.0" iyz="0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.006 -0.244475" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.006 -0.244475" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component1_1">
+  <inertial>
+    <origin xyz="-0.02033131776110798 -0.0045000000000000005 0.019721939796549626" rpy="0 0 0"/>
+    <mass value="0.021082503293697062"/>
+    <inertia ixx="4e-06" iyy="8e-06" izz="5e-06" ixy="-0.0" iyz="0.0" ixz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.011112 -0.006 -0.161131" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.011112 -0.006 -0.161131" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component7_1">
+  <inertial>
+    <origin xyz="-0.07920652437570141 -0.0014999999999999996 -0.06534588664689897" rpy="0 0 0"/>
+    <mass value="0.06675212345539702"/>
+    <inertia ixx="0.000108" iyy="0.000276" izz="0.000168" ixy="-0.0" iyz="0.0" ixz="-0.000134"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.073023 -0.006 -0.271053" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.073023 -0.006 -0.271053" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Component4_1">
+  <inertial>
+    <origin xyz="0.10221994787389238 -0.0014999999999999998 -0.07331157084354387" rpy="0 0 0"/>
+    <mass value="0.08170956705532126"/>
+    <inertia ixx="0.000154" iyy="0.000433" izz="0.00028" ixy="0.0" iyz="-0.0" ixz="0.000205"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.241299 -0.003 -0.134144" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.241299 -0.003 -0.134144" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Unsaved)_description/meshes/Component4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.026193 -0.003 -0.009525" rpy="0 0 0"/>
+  <parent link="Component6_1"/>
+  <child link="Component2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="-0.037305 0.003 -0.073819" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="-0.191292 0.0 -0.124619" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component3_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="-0.267492 0.0 -0.100806" rpy="0 0 0"/>
+  <parent link="Component2_1"/>
+  <child link="Component4_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 5" type="continuous">
+  <origin xyz="0.241299 0.0 -0.134144" rpy="0 0 0"/>
+  <parent link="Component4_1"/>
+  <child link="Component5_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.165099 0.0 -0.110331" rpy="0 0 0"/>
+  <parent link="Component3_1"/>
+  <child link="Component5_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 7" type="continuous">
+  <origin xyz="0.0 0.006 0.244475" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component6_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Cylindrical 11" type="Cylinderical">
+  <origin xyz="-0.011112 0.006 0.161131" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component1_1"/>
+</joint>
+
+<joint name="Revolute 12" type="continuous">
+  <origin xyz="-0.073023 0.006 0.271053" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Component7_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 13" type="continuous">
+  <origin xyz="-0.168276 -0.003 -0.136909" rpy="0 0 0"/>
+  <parent link="Component7_1"/>
+  <child link="Component4_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+</robot>
